@@ -1,11 +1,38 @@
-let errorIfNotObject = require('./index').errorIfNotObject;
+let errorIfNotIntegerZeroOrGreater = require('./index').errorIfNotIntegerZeroOrGreater;
 
-errorIfNotObject({}); // no error.
-errorIfNotObject([]); // no error.
+errorIfNotIntegerZeroOrGreater(1);
+console.log('test 1 passed');
 
-let str = new String('string');
-errorIfNotObject(str);
-console.log(str);
-console.log('passed');
+let errMessage = '';
 
-errorIfNotObject(null); // Error: "Input must be object"
+try{
+	errorIfNotIntegerZeroOrGreater(0.55);
+}
+catch (e) {
+	errMessage = e.message;
+}
+if (errMessage === "Input must be integer") console.log('test 2 passed');
+else console.log('test 2 FAILED');
+
+//
+// Error: "Input must be an integer not less than 0"
+errMessage = '';
+try{
+	errorIfNotIntegerZeroOrGreater(-2);
+}
+catch (e) {
+	errMessage = e.message;
+}
+if (errMessage === "Input must be an integer not less than 0") console.log('test 3 passed');
+else console.log('test 3 FAILED');
+
+
+errMessage = '';
+try{
+	errorIfNotIntegerZeroOrGreater('1');
+}
+catch (e) {
+	errMessage = e.message;
+}
+if (errMessage === "Input must be a finite number of type 'number'") console.log('test 4 passed');
+else console.log('test 4 FAILED');
