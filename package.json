@@ -1,0 +1,32 @@
+{
+  "name": "error-if-not-integer-zero-or-greater",
+  "version": "1.0.0",
+  "description": "Function triggers error if argument is not integer of zero or greater",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/error-if-not-integer-zero-or-greater.git"
+  },
+  "keywords": [
+    "error",
+    "message",
+    "not",
+    "integer",
+    "type-checking",
+    "type",
+    "check",
+    "data-type"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/error-if-not-integer-zero-or-greater/issues"
+  },
+  "homepage": "https://github.com/writetome51/error-if-not-integer-zero-or-greater#readme",
+  "dependencies": {
+	"error-if-not-integer": "~1.0.0"
+  }
+}
