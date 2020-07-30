@@ -22,10 +22,6 @@ errorIfNotIntegerZeroOrGreater(2); // no error.
 `npm i  error-if-not-integer-zero-or-greater`
 
 ## Loading
-```
-// if using TypeScript:
+```js
 import { errorIfNotIntegerZeroOrGreater} from 'error-if-not-integer-zero-or-greater';
-// if using ES5 JavaScript:
-var errorIfNotIntegerZeroOrGreater = 
-     require('error-if-not-integer-zero-or-greater').errorIfNotIntegerZeroOrGreater;
 ```

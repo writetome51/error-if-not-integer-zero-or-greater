@@ -1,10 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var errorIfNotInteger_1 = require("error-if-not-integer");
+import {errorIfNotInteger} from "error-if-not-integer";
 
 
-function errorIfNotIntegerZeroOrGreater(num) {
-    errorIfNotInteger_1.errorIfNotInteger(num);
+export function errorIfNotIntegerZeroOrGreater(num) {
+    errorIfNotInteger(num);
     if (num < 0)  throw new Error('Input must be an integer not less than 0');
 }
-exports.errorIfNotIntegerZeroOrGreater = errorIfNotIntegerZeroOrGreater;

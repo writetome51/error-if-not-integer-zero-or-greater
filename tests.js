@@ -1,4 +1,5 @@
-let errorIfNotIntegerZeroOrGreater = require('./index').errorIfNotIntegerZeroOrGreater;
+import {errorIfNotIntegerZeroOrGreater} from './index.js';
+
 
 errorIfNotIntegerZeroOrGreater(1);
 console.log('test 1 passed');
